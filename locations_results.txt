@@ -1,0 +1,10 @@
+united_states:united_states,united_states',american,america,countries,foreign,world,united_states_government,nations,country,international,abroad,nation,asian_countries,global,european_nations,superpower,americans,nations',countries'
+iraq:iraqi,iraq,baghdad,iraqis,iraqi_army,saddam_hussein,kuwait,iraqi_police,american_troops,iraqi_security_forces,iraqi_armed_forces,coalition_forces,american_forces,hussein,military,saddam,american_soldiers,forces,iraqis',occupation
+japan:tokyo,japan,japanese,nippon,nomura,mitsubishi,osaka,yamaichi,daiwa,nomura_securities,mitsui,yamaichi_securities,nikko,sakai,sumitomo,saitama,mizuho,miyamoto,nihon,shinji
+china:china,chinese,beijing,mainland_china,shanghai,mainland_chinese,hong_kong,taiwan,shenzhen,guangdong_province,guangdong,guangzhou,hainan,li,hangzhou,mainland,taiwanese,fuzhou,wenzhou,xiamen
+britain:britain,british,british_government,united_kingdom,london,england,britons,margaret_thatcher,wales,sir,tony_blair,thatcher_government,royal,british_aerospace,britian,european,john_major,bbc_radio,manchester,financial_times
+russia:russian,russia,moscow,vladimir,russian_president,russians,kremlin,putin,russian_federation,mikhail,soviet,boris,viktor,khodorkovsky,aleksandr,russian_parliament,vladimir_putin,sergei,mironov,russia_today
+germany:west_german,west_germany,east_germany,german,east_german,germany,west_berlin,germans,east_germans,berlin,eastern_germany,bonn,east_berlin,german_democratic_republic,germanys,german_government,helmut_kohl,kohl,german_reunification,munich
+canada:canada,canadian,quebec,ottawa,toronto,montreal,ontario,canadians,manitoba,winnipeg,alberta,british_columbia,saskatchewan,vancouver,edmonton,quebec_city,calgary,saskatoon,quebecer,brampton
+france:french,france,paris,philippe,francois,frenchman,jean,pierre,jacques,guillaume,dominique,henri,alain,edouard,arnaud,jean_louis,french_state,jean_francois,etienne,didier
+italy:italy,italian,milan,rome,southern_italy,italians,italia,trieste,naples,bergamo,milanese,turin,vicenza,lazio,reggio,sicily,cagliari,carlo,bologna,perugia
