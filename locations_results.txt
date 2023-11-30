@@ -1,9 +1,4 @@
-united_states:,,,,,,,,,,,,,,,,superpower,americans,,countries'
-
-united_states:,,,,,,,japan,,,,,,washington,,,,,,soviet_union
-
-
-
+united_states:united_states,united_states',american,america,countries,foreign,world,united_states_government,nations,country,international,abroad,nation,asian_countries,global,european_nations,superpower,americans,nations',countries'
 iraq:iraqi,iraq,baghdad,iraqis,iraqi_army,saddam_hussein,kuwait,iraqi_police,american_troops,iraqi_security_forces,iraqi_armed_forces,coalition_forces,american_forces,hussein,military,saddam,american_soldiers,forces,iraqis',occupation
 japan:tokyo,japan,japanese,nippon,nomura,mitsubishi,osaka,yamaichi,daiwa,nomura_securities,mitsui,yamaichi_securities,nikko,sakai,sumitomo,saitama,mizuho,miyamoto,nihon,shinji
 china:china,chinese,beijing,mainland_china,shanghai,mainland_chinese,hong_kong,taiwan,shenzhen,guangdong_province,guangdong,guangzhou,hainan,li,hangzhou,mainland,taiwanese,fuzhou,wenzhou,xiamen
