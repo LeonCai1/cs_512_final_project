@@ -6,8 +6,29 @@ import numpy as np
 import argparse
 from utils import *
 
-
 from nltk.corpus import wordnet
+
+def are_words_closely_related(word1, word2):
+    # Get synsets for the words
+    synsets_word1 = wordnet.synsets(word1)
+    synsets_word2 = wordnet.synsets(word2)
+
+    hypernym = []
+    # Check if one word is a hypernym of the other or they share a common hypernym
+    for synset1 in synsets_word1:
+        for synset2 in synsets_word2:
+            temp = 0
+            list1 = list(synset1.closure(lambda s: s.hypernyms())) + list(synset1.closure(lambda s: s.hyponyms()))
+            list2 = list(synset2.closure(lambda s: s.hypernyms())) + list(synset2.closure(lambda s: s.hyponyms()))
+            for term1 in list1:
+              if term1 in list2:
+                temp += 1
+            hypernym.append(temp)
+    if len(hypernym) == 0:
+      return 0
+    return max(hypernym)
+
+
 def get_similarity(word1, word2):
     similarity = None
     # Get synsets for the word
@@ -19,7 +40,9 @@ def get_similarity(word1, word2):
         for synset2 in synsets2:
             if synset1 and synset2:
                 temp.append(synset1.path_similarity(synset2))
-        
+    
+    if len(temp) == 0:
+      similarity = 0.
     similarity = max(temp)
     return similarity
 
@@ -74,13 +97,20 @@ def rank_ensemble(args, topk=20):
             def wordnet_score(word2mrr):
                 r = 1.
                 similarity = 0.
+                temp2 = []
                 for w in word2mrr.keys():
                     for s in seeds:
-                        temp2 = []
                         temp2.append(get_similarity(w, s))                    
                     similarity = max(temp2)
                 word2mrr[w]  += similarity
                 r += 1
+
+            
+            r = 1.
+            for w in word2mrr.keys():
+                for s in seeds:                  
+                    word2mrr[w] = word2mrr[w]+ are_words_closely_related(w, s)/100
+            r += 1
 
             wordnet_score(word2mrr)   
             ## word2mrr 在这里包含了三种办法的平均rank 如果能用这个平均rank去和seed的关系做判断再去修改这个rank会准确（prompt-based）（有点难）
